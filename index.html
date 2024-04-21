@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Heroes Game</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="cursors png">
+      <div class="container-full">
+        <div class="stage-1">
+          <img id="button" onclick="showhide()" src="/assets/title-img-2.png" class="center">
+          <div id="newpost"  class="hidden text-start-info"><p>Click on the logo to see the characters!</p></div>
+        </div>
+        <div class="stage-2 btn-hidden">
+          <div
+          class="container m-auto row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-2 mb-5"
+        >
+        <div class="col play hero-1">
+          <div
+              class="image-hero-101 image-hero card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg shadow-lg border-3 border-success"
+              id="beep-one"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="font-monospace fs-1 text-success pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Picolo
+                </h3>
+                <ul class="text-white list-unstyled mt-3 mb-4">
+                  <li class="fw-light bold mb-2"><img class="mb-1" src="/assets/shield.png
+                    " width="17px"> Life: 77 HP</li>
+                  <li class="fw-light mb-2"><img class="mb-1" src="/assets/attack.png
+                    " width="16px"> Level: 55</li>
+                  <li class="fw-light mb-2"><img class="mb-1" src="/assets/heart.png
+                    " width="17px"> Health: 59%</li>
+                </ul>
+                <a
+                  href="/login.html"
+                  type="button"
+                  class="btn btn-lg btn-success btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                  >See the story</a
+                ><br />
+                <ul class="d-flex list-unstyled mt-auto">
+                </ul>
+              </div>
+            </div></a
+          >
+        </div>
+    
+          <div class="col hero-2">
+            <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg shadow-lg border-3 border-warning"
+                style="
+                  background-image: url('/assets/freeza.jpeg');
+                  background-size: cover;
+                "
+              >
+                <div
+                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                >
+                  <h3 class="font-monospace fs-1 text-warning pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Freeza
+                  </h3>
+                  <ul class="text-white list-unstyled mt-3 mb-4">
+                    <li class="fw-light mb-2"><img class="mb-1" src="/assets/shield.png
+                      " width="17px"> Life: 85 HP</li>
+                    <li class="fw-light mb-2"><img class="mb-1" src="/assets/attack.png
+                      " width="16px"> Level: 61</li>
+                    <li class="fw-heart mb-2"><img class="mb-1" src="/assets/heart.png
+                      " width="17px"> Health: 66%</li>
+                  </ul>
+                  <a
+                    href="/login.html"
+                    type="button"
+                    class="btn btn-lg btn-warning btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                    >See the story</a
+                  ><br />
+                  <ul class="d-flex list-unstyled mt-auto">
+                  </ul>
+                </div>
+              </div></a
+            >
+          </div>
+    
+          <div class="col hero-3">
+            <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg shadow-lg border-3 border-light"
+                style="
+                  background-image: url('/assets/son-goku.jpeg');
+                  background-size: cover;
+                "
+              >
+                <div
+                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                >
+                  <h3 class="font-monospace fs-1 text-light pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Son Goku
+                  </h3>
+                  <ul class="text-white list-unstyled mt-3 mb-4">
+                    <li class="fw-light mb-2"><img class="mb-1" src="/assets/shield.png
+                      " width="17px"> Life: 99 HP</li>
+                    <li class="fw-light mb-2"><img class="mb-1" src="/assets/attack.png
+                      " width="16px"> Level: 72</li>
+                    <li class="fw-heart mb-2"><img class="mb-1" src="/assets/heart.png
+                      " width="17px"> Health: 89%</li>
+                  </ul>
+                  <a
+                    href="/login.html"
+                    type="button"
+                    class="btn btn-light btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                    >See the story</a
+                  ><br />
+                  <ul class="d-flex list-unstyled mt-auto">
+                  </ul>
+                </div>
+              </div></a
+            >
+        </div>
+       </div>
+      </div>
+      <div class="stage-3 btn-hidden">
+        <img src="/assets/play-go.png" class="play-go" data-bs-toggle="modal" data-bs-target="#exampleModalfinalbattle" alt="Final Battle">
+      </div>
+    </div>
+    <div class="music-bg cursors png">
+      <audio id="dragonAudio">
+      <source src="/audio/Chillout Music 2021 _ Aurora Night - Let Me Know (128kbps).mp3" type="audio/mp3">
+      </audio>
+      <span onclick="play()" type="button"><img class="play-bg" src="/audio/play.png" width="40px"></span>
+      <span onclick="pause()" type="button"><img class="pause-bg" src="/audio/pause.png" width="40px"></span>
+    </div>
+    <footer>
+      <div class="container cursors png">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">Copyright ❤️ by Stanciu Costel</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModalfinalbattle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">The end result of the fight</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <p class="fs-6">Your favorite hero won!</p>
+          <p class="text-light fs-5 font-monospace fw-semibold badge text-bg-success text-wrap" id="findWinnerjs"></p>
+          </div>
+          </div>
+          </div>
+          </div>
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Picolo Story</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe style="display: block;
+                              margin: 0 auto;
+                              max-width: 100%;
+                              padding-bottom: 10px;" src="https://www.youtube.com/embed/eo4ep9JcMOU?si=-6goRl1zIGzSTG2W"  width="560" height="315" frameborder="0" allow="autoplay; encrypted-media allowfullscreen"
+                              allowfullscreen></iframe>
+                </div>
+                </div>
+                </div>
+                </div>
+                
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Freeza Story</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe style="display: block;
+                              margin: 0 auto;
+                              max-width: 100%;
+                              padding-bottom: 10px;" src="https://www.youtube.com/embed/GiIe8Zf591o?si=g2ZeAUjK-med4NjF"  width="560" height="315" frameborder="0" allow="autoplay; encrypted-media allowfullscreen"
+                              allowfullscreen></iframe>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Son Goku Story</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <iframe style="display: block;
+                              margin: 0 auto;
+                              max-width: 100%;
+                              padding-bottom: 10px;" src="https://www.youtube.com/embed/WPEVOLJrdnk?si=7UfHixCERnpBHkNT"  width="560" height="315" frameborder="0" allow="autoplay; encrypted-media allowfullscreen"
+                              allowfullscreen></iframe>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+    <script src="main.js"></script>
+    <script src="short.js"></script>
+  </body>
+</html>

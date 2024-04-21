@@ -1,0 +1,251 @@
+body {
+  background: url(assets/bg-image.jpeg);
+  background-size: cover;
+  font-family: "Noto Sans";
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-size: auto;
+  }
+}
+
+.container-full {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text-start-info {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  opacity: 80%;
+}
+.btn-hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.hero-1 {
+  visibility: hidden;
+  animation: fadeIn 1.5s forwards 0.1s;
+}
+.hero-1:hover {
+  transition-timing-function: ease-in-out;
+  transform: scale(1.2);
+}
+
+.hero-2 {
+  visibility: hidden;
+  animation: fadeIn 3.5s forwards 0.7s;
+}
+
+.hero-3 {
+  visibility: hidden;
+  animation: fadeIn 4.5s forwards 1.2s;
+}
+
+.image-hero-101 {
+  background-image: url("/assets/picolo.jpeg");
+  background-size: cover;
+  transition: background-size 300ms ease-in-out;
+}
+
+.title-p {
+  color: #1b2d39;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  display: block;
+  font-size: 45px;
+}
+
+.title-go {
+  color: white;
+  background-color: rgb(248, 19, 19);
+  padding: 5px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  transform: scale(0.9);
+}
+
+.png {
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_2732.png"), auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -25px;
+    margin-top: 0px;
+    width: 80%;
+  }
+  .play-go {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    width: 20%;
+    animation: rotation 10s infinite linear;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -35px;
+    margin-top: 0px;
+    width: 35%;
+  }
+  .play-go {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: -15px;
+    width: 8%;
+    animation: rotation 10s infinite linear;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -35px;
+    margin-top: -20px;
+    width: 25%;
+  }
+  .play-go {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    width: 5%;
+    animation: rotation 10s infinite linear;
+  }
+}
+
+.center:active {
+  transform: scale(1.02);
+}
+
+.play-go:active {
+  transform: scale(1.08);
+}
+
+.music-bg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+}
+
+.play-bg,
+.pause-bg {
+  margin: 15px 5px -20px 10px;
+  opacity: 95%;
+}
+
+.play-bg:hover,
+.pause-bg:hover {
+  opacity: 90%;
+}
+
+.play-bg:active,
+.pause-bg:active {
+  transform: scale(1.08);
+}
+
+footer {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.animate-charcter {
+  background-image: linear-gradient(-100deg, #ffffff 0%, #242219 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #ece6e6;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 15px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0, 0);
+    visibility: visible;
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.findwinner-loading {
+  color: #ffffff;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 3px;
+  margin: 10px;
+  text-align: center;
+  animation: fadeIn 0.5s forwards 0.1s;
+}
+
+.findwinner-result {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  animation: fadeIn 5.5s forwards 5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .final-fight-img {
+    width: 55%;
+  }
+}
