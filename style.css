@@ -51,7 +51,7 @@ body {
 }
 
 .image-hero-101 {
-  background-image: url("/assets/picolo.jpeg");
+  background-image: url("assets/picolo.jpeg");
   background-size: cover;
   transition: background-size 300ms ease-in-out;
 }
