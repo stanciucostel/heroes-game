@@ -50,12 +50,6 @@ body {
   animation: fadeIn 4.5s forwards 1.2s;
 }
 
-.image-hero-101 {
-  background-image: url(assets/picolo.jpeg);
-  background-size: cover;
-  transition: background-size 300ms ease-in-out;
-}
-
 .title-p {
   color: #1b2d39;
   background-color: white;
